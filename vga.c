@@ -1,7 +1,3 @@
-// vga.c
-
-// Bu dosyada `main` fonksiyonu olmamalı. Sadece gerekli fonksiyonlar ve tanımlamalar olmalı.
-
 void set_vga_mode() {
     // VGA modunu ayarlamak için gerekli kodlar (eğer gerekiyorsa).
 }
