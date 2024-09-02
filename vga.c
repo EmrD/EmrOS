@@ -7,7 +7,7 @@ void clear_screen() {
     unsigned int size = 80 * 25 * 2;
     for (unsigned int i = 0; i < size; i += 2) {
         vga_buffer[i] = ' ';
-        vga_buffer[i + 1] = 0x01; // Arka plan rengini mavi yap
+        vga_buffer[i + 1] = 0x01; // Mavi arka plan rengi
     }
 }
 
@@ -19,7 +19,7 @@ void draw_bar() {
         for (int x = 0; x < 80; x++) {
             int index = (y * 80 + x) * 2;
             vga_buffer[index] = ' ';
-            vga_buffer[index + 1] = 0x07; // Beyaz renk
+            vga_buffer[index + 1] = 0x07; // Beyaz arka plan
         }
     }
 
@@ -29,6 +29,6 @@ void draw_bar() {
     for (int i = 0; i < text_length; i++) {
         int index = ((25 - 1) * 80 + (text_start + i)) * 2;
         vga_buffer[index] = text[i];
-        vga_buffer[index + 1] = 0x07; // Beyaz renk
+        vga_buffer[index + 1] = 0x07;
     }
 }
