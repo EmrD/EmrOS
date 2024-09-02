@@ -19,3 +19,5 @@ EOF
 grub-mkrescue -o EmrOS.iso iso
 
 qemu-system-i386 -cdrom EmrOS.iso
+
+denem
