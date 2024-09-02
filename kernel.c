@@ -16,8 +16,6 @@ void main() {
         process_mouse_input();  
 
         // Ekranı güncellemek için önce imleci temizleyin
-        clear_screen();
-        draw_bar();
         draw_mouse_cursor(mouse_x, mouse_y);
     }
 }
