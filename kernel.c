@@ -2,10 +2,12 @@
 
 extern void clear_screen();
 extern void draw_bar();
+extern void disable_cursor();
 
 void main() {
-    clear_screen();
-    draw_bar();
+    disable_cursor();  // Cursoru gizle
+    clear_screen();    // Ekranı temizle ve arka planı mavi yap
+    draw_bar();        // Alt kısmına bar ekle
     while (1) {
         __asm__("hlt"); // Sonsuz döngü
     }
